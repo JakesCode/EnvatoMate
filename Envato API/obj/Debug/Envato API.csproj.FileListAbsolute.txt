@@ -47,3 +47,4 @@ C:\Users\Jake\Documents\GitHub\EnvatoMate\Envato API\obj\Debug\Envato_API.MainWi
 C:\Users\Jake\Documents\GitHub\EnvatoMate\Envato API\obj\Debug\Envato_API.Properties.Resources.resources
 C:\Users\Jake\Documents\GitHub\EnvatoMate\Envato API\obj\Debug\Envato API.csproj.GenerateResource.Cache
 C:\Users\Jake\Documents\GitHub\EnvatoMate\Envato API\obj\Debug\Envato_API.PhotoDune.resources
+C:\Users\Jake (King of Cool)\Documents\GitHub\EnvatoMate\Envato API\obj\Debug\Envato_API.PhotoDune.resources

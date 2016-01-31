@@ -57,7 +57,7 @@ namespace Envato_API
         }
 
         private Newtonsoft.Json.Linq.JObject refreshedResponse { get; set; }
-        private async void makeRequest()
+        public async void makeRequest()
         {
             var param = File.ReadAllLines("auth.dat");
             Newtonsoft.Json.Linq.JObject RESPONSE = Newtonsoft.Json.Linq.JObject.Parse(param[0]);

@@ -70,7 +70,7 @@
             this.welcomeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.welcomeLabel.Location = new System.Drawing.Point(3, 90);
             this.welcomeLabel.Name = "welcomeLabel";
-            this.welcomeLabel.Size = new System.Drawing.Size(58, 21);
+            this.welcomeLabel.Size = new System.Drawing.Size(70, 24);
             this.welcomeLabel.TabIndex = 2;
             this.welcomeLabel.Text = "label1";
             // 
@@ -89,9 +89,9 @@
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Monofonto", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.label1.Location = new System.Drawing.Point(178, 92);
+            this.label1.Location = new System.Drawing.Point(166, 92);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 19);
+            this.label1.Size = new System.Drawing.Size(63, 20);
             this.label1.TabIndex = 4;
             this.label1.Text = "Logout";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -111,11 +111,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Monofonto", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Monofonto", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.label2.Location = new System.Drawing.Point(3, 177);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(277, 19);
+            this.label2.Size = new System.Drawing.Size(273, 15);
             this.label2.TabIndex = 6;
             this.label2.Text = "Royalty Free Stock Photography From $1";
             // 

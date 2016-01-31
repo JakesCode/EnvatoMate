@@ -10,6 +10,8 @@ using System.Runtime.InteropServices;
 using Envato_API;
 using System.Web;
 using System.Linq;
+using Newtonsoft.Json.Linq;
+using System.Globalization;
 
 namespace Envato_API
 {
@@ -156,14 +158,17 @@ namespace Envato_API
         public string ENVATO_RESPONSE_BEFORE { get; set; }
         private async void populateWindow()
         {
+            // Misc stuff //
             textBox1.ScrollBars = ScrollBars.Vertical;
+            UI_WEB.Url = new Uri("http://photodune.net/");
+            // End of misc stuff //
+
             string longurl = "https://api.envato.com/v1/discovery/search/search/item";
             var uriBuilder = new UriBuilder(longurl);
             Dictionary<string, string> parameters = new Dictionary<string, string>
             {
                 {"site", "photodune.net"},
-                {"username", "samberson"},
-                {"size", "m"}
+                {"username", "samberson"}
             };
             var query = HttpUtility.ParseQueryString(uriBuilder.Query);
             // Iteration time! //
@@ -183,13 +188,38 @@ namespace Envato_API
             }
 
             var ENVATO_RESPONSE = Newtonsoft.Json.Linq.JObject.Parse(ENVATO_RESPONSE_BEFORE);
-            var thumbnailArray = ENVATO_RESPONSE.Children<Newtonsoft.Json.Linq.JProperty>().FirstOrDefault(x => x.Name == "thumbnail").Value;
-            textBox1.Text = thumbnailArray[1].ToString();
+            foreach (var x in ENVATO_RESPONSE)
+            {
+                if (x.Key == "matches")
+                {
+                    // We've hit the jackpot! //
+                    JToken value = x.Value.First;
+                    Match newMatch = new Match();
+
+                    // Debug Purposes//
+                    textBox1.Text = value.ToString();
+                    // End of Debug Purposes //
+                    
+                    // Populate the UI //
+                    BOX_1.ImageLocation = value["previews"]["thumbnail_preview"]["large_url"].ToString();
+                    imgURL = value["url"].ToString();
+
+                    TextInfo textInfo = new CultureInfo("en-GB", false).TextInfo;
+                    UI_NAME.Text = textInfo.ToTitleCase(value["name"].ToString());
+                    // End of populating UI //
+                }
+            }
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        public string imgURL { get; set; }
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            UI_WEB.Url = new Uri(imgURL);
         }
     }
 }

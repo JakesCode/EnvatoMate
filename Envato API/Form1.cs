@@ -18,8 +18,6 @@ namespace Envato_API
 {
     public partial class Form1 : Form
     {
-        public string jsonResponse { get; set; }
-
         public Form1()
         {
             InitializeComponent();
@@ -50,12 +48,12 @@ namespace Envato_API
                 using (var client = new HttpClient())
                 {
                     var values = new Dictionary<string, string>
-                {
-                    { "grant_type", "authorization_code" },
-                    { "code", param },
-                    { "client_id", "envatomate-3ur0bxxw" },
-                    { "client_secret", "hhlB6MdIT5xCEy3wlwwbOaEK2XryGYqe" }
-                };
+                    {
+                        { "grant_type", "authorization_code" },
+                        { "code", param },
+                        { "client_id", "envatomate-3ur0bxxw" },
+                        { "client_secret", "hhlB6MdIT5xCEy3wlwwbOaEK2XryGYqe" }
+                    };
                     var content = new FormUrlEncodedContent(values);
                     var response = await client.PostAsync("https://api.envato.com/token", content);
                     var responseString = await response.Content.ReadAsStringAsync();
@@ -72,11 +70,6 @@ namespace Envato_API
             var main = new MainWindow();
             main.Closed += (s, args) => this.Close();
             main.ShowDialog();
-        }
-
-        private void OAUTH_DocumentCompleted_1(object sender, WebBrowserDocumentCompletedEventArgs e)
-        {
-
         }
     }
 }
