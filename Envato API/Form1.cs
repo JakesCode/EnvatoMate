@@ -73,5 +73,10 @@ namespace Envato_API
             main.Closed += (s, args) => this.Close();
             main.ShowDialog();
         }
+
+        private void OAUTH_DocumentCompleted_1(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+
+        }
     }
 }

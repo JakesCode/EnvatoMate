@@ -30,3 +30,20 @@ C:\Users\Jake (King of Cool)\Documents\GitHub\EnvatoMate\Envato API\obj\Debug\En
 C:\Users\Jake (King of Cool)\Documents\GitHub\EnvatoMate\Envato API\obj\Debug\Envato_API.MainWindow.resources
 C:\Users\Jake (King of Cool)\Documents\GitHub\EnvatoMate\Envato API\obj\Debug\Envato_API.Properties.Resources.resources
 C:\Users\Jake (King of Cool)\Documents\GitHub\EnvatoMate\Envato API\obj\Debug\Envato API.csproj.GenerateResource.Cache
+C:\Users\Jake\Documents\GitHub\EnvatoMate\Envato API\bin\Debug\Envato API.exe.config
+C:\Users\Jake\Documents\GitHub\EnvatoMate\Envato API\obj\Debug\Envato API.exe
+C:\Users\Jake\Documents\GitHub\EnvatoMate\Envato API\obj\Debug\Envato API.pdb
+C:\Users\Jake\Documents\GitHub\EnvatoMate\Envato API\bin\Debug\Envato API.exe
+C:\Users\Jake\Documents\GitHub\EnvatoMate\Envato API\bin\Debug\Envato API.pdb
+C:\Users\Jake\Documents\GitHub\EnvatoMate\Envato API\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jake\Documents\GitHub\EnvatoMate\Envato API\bin\Debug\Newtonsoft.Json.Schema.dll
+C:\Users\Jake\Documents\GitHub\EnvatoMate\Envato API\bin\Debug\RestSharp.dll
+C:\Users\Jake\Documents\GitHub\EnvatoMate\Envato API\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jake\Documents\GitHub\EnvatoMate\Envato API\bin\Debug\Newtonsoft.Json.Schema.xml
+C:\Users\Jake\Documents\GitHub\EnvatoMate\Envato API\bin\Debug\RestSharp.xml
+C:\Users\Jake\Documents\GitHub\EnvatoMate\Envato API\obj\Debug\Envato API.csprojResolveAssemblyReference.cache
+C:\Users\Jake\Documents\GitHub\EnvatoMate\Envato API\obj\Debug\Envato_API.Form1.resources
+C:\Users\Jake\Documents\GitHub\EnvatoMate\Envato API\obj\Debug\Envato_API.MainWindow.resources
+C:\Users\Jake\Documents\GitHub\EnvatoMate\Envato API\obj\Debug\Envato_API.Properties.Resources.resources
+C:\Users\Jake\Documents\GitHub\EnvatoMate\Envato API\obj\Debug\Envato API.csproj.GenerateResource.Cache
+C:\Users\Jake\Documents\GitHub\EnvatoMate\Envato API\obj\Debug\Envato_API.PhotoDune.resources

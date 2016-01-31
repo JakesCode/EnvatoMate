@@ -40,6 +40,7 @@
             this.OAUTH.Name = "OAUTH";
             this.OAUTH.Size = new System.Drawing.Size(497, 483);
             this.OAUTH.TabIndex = 0;
+            this.OAUTH.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.OAUTH_DocumentCompleted_1);
             // 
             // Form1
             // 
