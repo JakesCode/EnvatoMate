@@ -36,6 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.photoduneImage = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.UI_BALANCE = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.profileImg)).BeginInit();
@@ -68,9 +69,9 @@
             this.welcomeLabel.AutoSize = true;
             this.welcomeLabel.Font = new System.Drawing.Font("Monofonto", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.welcomeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.welcomeLabel.Location = new System.Drawing.Point(3, 90);
+            this.welcomeLabel.Location = new System.Drawing.Point(3, 95);
             this.welcomeLabel.Name = "welcomeLabel";
-            this.welcomeLabel.Size = new System.Drawing.Size(70, 24);
+            this.welcomeLabel.Size = new System.Drawing.Size(58, 21);
             this.welcomeLabel.TabIndex = 2;
             this.welcomeLabel.Text = "label1";
             // 
@@ -82,16 +83,17 @@
             this.profileImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.profileImg.TabIndex = 3;
             this.profileImg.TabStop = false;
+            this.profileImg.Click += new System.EventHandler(this.profileImg_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label1.Font = new System.Drawing.Font("Monofonto", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Monofonto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.label1.Location = new System.Drawing.Point(166, 92);
+            this.label1.Location = new System.Drawing.Point(242, 95);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 20);
+            this.label1.Size = new System.Drawing.Size(44, 16);
             this.label1.TabIndex = 4;
             this.label1.Text = "Logout";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -111,13 +113,26 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Monofonto", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Monofonto", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.label2.Location = new System.Drawing.Point(3, 177);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(273, 15);
+            this.label2.Size = new System.Drawing.Size(277, 19);
             this.label2.TabIndex = 6;
             this.label2.Text = "Royalty Free Stock Photography From $1";
+            // 
+            // UI_BALANCE
+            // 
+            this.UI_BALANCE.AutoSize = true;
+            this.UI_BALANCE.Font = new System.Drawing.Font("Monofonto", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UI_BALANCE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
+            this.UI_BALANCE.Location = new System.Drawing.Point(168, 95);
+            this.UI_BALANCE.Name = "UI_BALANCE";
+            this.UI_BALANCE.Size = new System.Drawing.Size(58, 21);
+            this.UI_BALANCE.TabIndex = 7;
+            this.UI_BALANCE.Text = "£00.00";
+            this.UI_BALANCE.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.UI_BALANCE.Click += new System.EventHandler(this.UI_BALANCE_Click);
             // 
             // MainWindow
             // 
@@ -125,6 +140,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(305, 504);
+            this.Controls.Add(this.UI_BALANCE);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.photoduneImage);
             this.Controls.Add(this.label1);
@@ -155,5 +171,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox photoduneImage;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label UI_BALANCE;
     }
 }

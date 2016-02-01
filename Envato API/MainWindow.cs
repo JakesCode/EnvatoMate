@@ -92,6 +92,7 @@ namespace Envato_API
             // Populate the form //
             welcomeLabel.Text = ("Welcome, " + (string)ENVATO_RESPONSE["account"]["firstname"] + ".");
             profileImg.ImageLocation = (string)ENVATO_RESPONSE["account"]["image"];
+            UI_BALANCE.Text = "£" + (string)ENVATO_RESPONSE["account"]["balance"];
             // End of populating //
         }
 
@@ -105,6 +106,16 @@ namespace Envato_API
         {
             PhotoDune photoduneWindow = new PhotoDune();
             photoduneWindow.ShowDialog();
+        }
+
+        private void profileImg_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UI_BALANCE_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
