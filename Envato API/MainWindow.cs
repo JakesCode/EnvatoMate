@@ -23,8 +23,8 @@ namespace Envato_API
         {
             // Little bit of background colouring work //
             this.BackColor = Color.FromArgb(34, 34, 34);
+            
             // Ok, let's go! //
-
             var sysTrayMenu = new ContextMenu();
             sysTrayMenu.MenuItems.Add("Open EnvatoMate", showMainWindow);
             sysTrayMenu.MenuItems.Add("Quit EnvatoMate", quitEnvatoMate);
@@ -104,8 +104,15 @@ namespace Envato_API
 
         private void photoduneImage_Click(object sender, EventArgs e)
         {
-            PhotoDune photoduneWindow = new PhotoDune();
-            photoduneWindow.ShowDialog();
+            if (!(welcomeLabel.Text == "USER"))
+            {
+                PhotoDune photoduneWindow = new PhotoDune();
+                photoduneWindow.ShowDialog();
+            } else
+            {
+                MessageBox.Show("NvatoMate is currently conversing with Envato's Servers." + Environment.NewLine + "Please try again shortly.", "Background work in progress", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
         }
 
         private void profileImg_Click(object sender, EventArgs e)

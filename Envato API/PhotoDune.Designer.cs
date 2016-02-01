@@ -76,7 +76,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(415, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(416, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(37, 33);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -87,7 +87,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(368, 335);
+            this.pictureBox1.Location = new System.Drawing.Point(369, 336);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(104, 47);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -117,34 +117,34 @@
             // 
             this.UI_NAME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.UI_NAME.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.UI_NAME.Font = new System.Drawing.Font("Monofonto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UI_NAME.Font = new System.Drawing.Font("Coolvetica Rg", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UI_NAME.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.UI_NAME.Location = new System.Drawing.Point(183, 56);
+            this.UI_NAME.Location = new System.Drawing.Point(180, 56);
             this.UI_NAME.Multiline = true;
             this.UI_NAME.Name = "UI_NAME";
-            this.UI_NAME.Size = new System.Drawing.Size(260, 34);
+            this.UI_NAME.Size = new System.Drawing.Size(260, 38);
             this.UI_NAME.TabIndex = 7;
             this.UI_NAME.Text = "NAME\r\nNAME";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Monofonto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Coolvetica Rg", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.label1.Location = new System.Drawing.Point(358, 147);
+            this.label1.Location = new System.Drawing.Point(353, 146);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 16);
+            this.label1.Size = new System.Drawing.Size(96, 18);
             this.label1.TabIndex = 8;
             this.label1.Text = "Image Preview";
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Monofonto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Font = new System.Drawing.Font("Coolvetica Rg", 11.25F);
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(131)))), ((int)(((byte)(148)))));
-            this.linkLabel1.Location = new System.Drawing.Point(380, 325);
+            this.linkLabel1.Location = new System.Drawing.Point(380, 324);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(26, 16);
+            this.linkLabel1.Size = new System.Drawing.Size(31, 18);
             this.linkLabel1.TabIndex = 9;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Buy";
@@ -161,11 +161,11 @@
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Font = new System.Drawing.Font("Monofonto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel2.Font = new System.Drawing.Font("Coolvetica Rg", 11.25F);
             this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(131)))), ((int)(((byte)(148)))));
-            this.linkLabel2.Location = new System.Drawing.Point(412, 325);
+            this.linkLabel2.Location = new System.Drawing.Point(406, 324);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(44, 16);
+            this.linkLabel2.Size = new System.Drawing.Size(51, 18);
             this.linkLabel2.TabIndex = 11;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Basket";
@@ -175,9 +175,9 @@
             // 
             this.UI_DESC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.UI_DESC.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.UI_DESC.Font = new System.Drawing.Font("Monofonto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UI_DESC.Font = new System.Drawing.Font("Coolvetica Rg", 11.25F);
             this.UI_DESC.ForeColor = System.Drawing.Color.Aqua;
-            this.UI_DESC.Location = new System.Drawing.Point(183, 89);
+            this.UI_DESC.Location = new System.Drawing.Point(180, 91);
             this.UI_DESC.Multiline = true;
             this.UI_DESC.Name = "UI_DESC";
             this.UI_DESC.Size = new System.Drawing.Size(260, 53);
@@ -188,7 +188,7 @@
             // 
             this.UI_SALES.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.UI_SALES.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.UI_SALES.Font = new System.Drawing.Font("Monofonto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UI_SALES.Font = new System.Drawing.Font("Coolvetica Rg", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UI_SALES.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.UI_SALES.Location = new System.Drawing.Point(184, 147);
             this.UI_SALES.Multiline = false;
@@ -202,11 +202,11 @@
             // 
             this.UI_USER.AutoSize = true;
             this.UI_USER.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.UI_USER.Font = new System.Drawing.Font("Monofonto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UI_USER.Font = new System.Drawing.Font("Coolvetica Rg", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UI_USER.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(131)))), ((int)(((byte)(148)))));
-            this.UI_USER.Location = new System.Drawing.Point(181, 293);
+            this.UI_USER.Location = new System.Drawing.Point(177, 298);
             this.UI_USER.Name = "UI_USER";
-            this.UI_USER.Size = new System.Drawing.Size(56, 16);
+            this.UI_USER.Size = new System.Drawing.Size(69, 16);
             this.UI_USER.TabIndex = 14;
             this.UI_USER.Text = "USERNAME";
             this.UI_USER.Click += new System.EventHandler(this.UI_USER_Click);
@@ -224,7 +224,7 @@
             // 
             this.UI_TAGS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.UI_TAGS.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.UI_TAGS.Font = new System.Drawing.Font("Monofonto", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UI_TAGS.Font = new System.Drawing.Font("Coolvetica Rg", 9.749999F);
             this.UI_TAGS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.UI_TAGS.Location = new System.Drawing.Point(243, 293);
             this.UI_TAGS.Multiline = true;
@@ -246,20 +246,20 @@
             // UI_TRENDING_LABEL
             // 
             this.UI_TRENDING_LABEL.AutoSize = true;
-            this.UI_TRENDING_LABEL.Font = new System.Drawing.Font("Monofonto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UI_TRENDING_LABEL.Font = new System.Drawing.Font("Coolvetica Rg", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UI_TRENDING_LABEL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.UI_TRENDING_LABEL.Location = new System.Drawing.Point(358, 267);
+            this.UI_TRENDING_LABEL.Location = new System.Drawing.Point(357, 267);
             this.UI_TRENDING_LABEL.Name = "UI_TRENDING_LABEL";
-            this.UI_TRENDING_LABEL.Size = new System.Drawing.Size(62, 16);
+            this.UI_TRENDING_LABEL.Size = new System.Drawing.Size(65, 18);
             this.UI_TRENDING_LABEL.TabIndex = 18;
             this.UI_TRENDING_LABEL.Text = "Trending!";
             // 
             // UI_LOADING
             // 
             this.UI_LOADING.Image = ((System.Drawing.Image)(resources.GetObject("UI_LOADING.Image")));
-            this.UI_LOADING.Location = new System.Drawing.Point(170, 4);
+            this.UI_LOADING.Location = new System.Drawing.Point(164, 4);
             this.UI_LOADING.Name = "UI_LOADING";
-            this.UI_LOADING.Size = new System.Drawing.Size(282, 367);
+            this.UI_LOADING.Size = new System.Drawing.Size(292, 367);
             this.UI_LOADING.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.UI_LOADING.TabIndex = 19;
             this.UI_LOADING.TabStop = false;
@@ -268,7 +268,7 @@
             // UI_LOADING_GIF
             // 
             this.UI_LOADING_GIF.Image = ((System.Drawing.Image)(resources.GetObject("UI_LOADING_GIF.Image")));
-            this.UI_LOADING_GIF.Location = new System.Drawing.Point(254, 148);
+            this.UI_LOADING_GIF.Location = new System.Drawing.Point(264, 150);
             this.UI_LOADING_GIF.Name = "UI_LOADING_GIF";
             this.UI_LOADING_GIF.Size = new System.Drawing.Size(100, 50);
             this.UI_LOADING_GIF.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -292,7 +292,7 @@
             this.SRCH_TERM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.SRCH_TERM.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SRCH_TERM.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.SRCH_TERM.Font = new System.Drawing.Font("Monofonto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRCH_TERM.Font = new System.Drawing.Font("Coolvetica Rg", 11.25F);
             this.SRCH_TERM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(183)))), ((int)(((byte)(183)))));
             this.SRCH_TERM.Location = new System.Drawing.Point(8, 31);
             this.SRCH_TERM.Multiline = true;
@@ -306,7 +306,7 @@
             this.SRCH_TAGS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.SRCH_TAGS.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SRCH_TAGS.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.SRCH_TAGS.Font = new System.Drawing.Font("Monofonto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRCH_TAGS.Font = new System.Drawing.Font("Coolvetica Rg", 11.25F);
             this.SRCH_TAGS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(183)))), ((int)(((byte)(183)))));
             this.SRCH_TAGS.Location = new System.Drawing.Point(8, 74);
             this.SRCH_TAGS.Multiline = true;
@@ -320,7 +320,7 @@
             this.SRCH_COLS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.SRCH_COLS.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SRCH_COLS.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.SRCH_COLS.Font = new System.Drawing.Font("Monofonto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRCH_COLS.Font = new System.Drawing.Font("Coolvetica Rg", 11.25F);
             this.SRCH_COLS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(183)))), ((int)(((byte)(183)))));
             this.SRCH_COLS.Location = new System.Drawing.Point(8, 117);
             this.SRCH_COLS.Multiline = true;
@@ -332,7 +332,7 @@
             // SRCH_SIZE
             // 
             this.SRCH_SIZE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.SRCH_SIZE.Font = new System.Drawing.Font("Monofonto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRCH_SIZE.Font = new System.Drawing.Font("Coolvetica Rg", 11.25F);
             this.SRCH_SIZE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.SRCH_SIZE.FormattingEnabled = true;
             this.SRCH_SIZE.Items.AddRange(new object[] {
@@ -345,7 +345,7 @@
             "XXL"});
             this.SRCH_SIZE.Location = new System.Drawing.Point(8, 160);
             this.SRCH_SIZE.Name = "SRCH_SIZE";
-            this.SRCH_SIZE.Size = new System.Drawing.Size(150, 24);
+            this.SRCH_SIZE.Size = new System.Drawing.Size(150, 26);
             this.SRCH_SIZE.TabIndex = 25;
             this.SRCH_SIZE.Text = "Photo Size....";
             // 
@@ -354,11 +354,11 @@
             this.SRCH_MINP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.SRCH_MINP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SRCH_MINP.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.SRCH_MINP.Font = new System.Drawing.Font("Monofonto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRCH_MINP.Font = new System.Drawing.Font("Coolvetica Rg", 11.25F);
             this.SRCH_MINP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(183)))), ((int)(((byte)(183)))));
             this.SRCH_MINP.Location = new System.Drawing.Point(8, 190);
             this.SRCH_MINP.Name = "SRCH_MINP";
-            this.SRCH_MINP.Size = new System.Drawing.Size(150, 15);
+            this.SRCH_MINP.Size = new System.Drawing.Size(150, 18);
             this.SRCH_MINP.TabIndex = 26;
             this.SRCH_MINP.Text = "Minimum Price....";
             // 
@@ -367,18 +367,18 @@
             this.SRCH_MAXP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.SRCH_MAXP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SRCH_MAXP.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.SRCH_MAXP.Font = new System.Drawing.Font("Monofonto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRCH_MAXP.Font = new System.Drawing.Font("Coolvetica Rg", 11.25F);
             this.SRCH_MAXP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(183)))), ((int)(((byte)(183)))));
             this.SRCH_MAXP.Location = new System.Drawing.Point(8, 211);
             this.SRCH_MAXP.Name = "SRCH_MAXP";
-            this.SRCH_MAXP.Size = new System.Drawing.Size(150, 15);
+            this.SRCH_MAXP.Size = new System.Drawing.Size(150, 18);
             this.SRCH_MAXP.TabIndex = 27;
             this.SRCH_MAXP.Text = "Maximum Price....";
             // 
             // SRCH_DATE
             // 
             this.SRCH_DATE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.SRCH_DATE.Font = new System.Drawing.Font("Monofonto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRCH_DATE.Font = new System.Drawing.Font("Coolvetica Rg", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SRCH_DATE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.SRCH_DATE.FormattingEnabled = true;
             this.SRCH_DATE.Items.AddRange(new object[] {
@@ -389,14 +389,14 @@
             "Today"});
             this.SRCH_DATE.Location = new System.Drawing.Point(8, 232);
             this.SRCH_DATE.Name = "SRCH_DATE";
-            this.SRCH_DATE.Size = new System.Drawing.Size(150, 24);
+            this.SRCH_DATE.Size = new System.Drawing.Size(150, 26);
             this.SRCH_DATE.TabIndex = 28;
             this.SRCH_DATE.Text = "Upload Date....";
             // 
             // SRCH_ORTN
             // 
             this.SRCH_ORTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.SRCH_ORTN.Font = new System.Drawing.Font("Monofonto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRCH_ORTN.Font = new System.Drawing.Font("Coolvetica Rg", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SRCH_ORTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.SRCH_ORTN.FormattingEnabled = true;
             this.SRCH_ORTN.Items.AddRange(new object[] {
@@ -405,7 +405,7 @@
             "Portrait"});
             this.SRCH_ORTN.Location = new System.Drawing.Point(8, 262);
             this.SRCH_ORTN.Name = "SRCH_ORTN";
-            this.SRCH_ORTN.Size = new System.Drawing.Size(150, 24);
+            this.SRCH_ORTN.Size = new System.Drawing.Size(150, 26);
             this.SRCH_ORTN.TabIndex = 29;
             this.SRCH_ORTN.Text = "Orientation....";
             // 
@@ -414,29 +414,29 @@
             this.SRCH_UNAM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.SRCH_UNAM.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SRCH_UNAM.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.SRCH_UNAM.Font = new System.Drawing.Font("Monofonto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SRCH_UNAM.Font = new System.Drawing.Font("Coolvetica Rg", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SRCH_UNAM.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(183)))), ((int)(((byte)(183)))));
             this.SRCH_UNAM.Location = new System.Drawing.Point(8, 292);
             this.SRCH_UNAM.Name = "SRCH_UNAM";
-            this.SRCH_UNAM.Size = new System.Drawing.Size(150, 15);
+            this.SRCH_UNAM.Size = new System.Drawing.Size(150, 18);
             this.SRCH_UNAM.TabIndex = 30;
             this.SRCH_UNAM.Text = "Username....";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Monofonto", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Coolvetica Rg", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.label3.Location = new System.Drawing.Point(59, 351);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 19);
+            this.label3.Size = new System.Drawing.Size(109, 20);
             this.label3.TabIndex = 31;
             this.label3.Text = "Max items: 100";
             // 
             // UI_SBTN
             // 
             this.UI_SBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.UI_SBTN.Font = new System.Drawing.Font("Monofonto", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UI_SBTN.Font = new System.Drawing.Font("Coolvetica Rg", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UI_SBTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.UI_SBTN.Location = new System.Drawing.Point(8, 314);
             this.UI_SBTN.Name = "UI_SBTN";
@@ -449,9 +449,9 @@
             // UI_NO_SEARCH
             // 
             this.UI_NO_SEARCH.Image = ((System.Drawing.Image)(resources.GetObject("UI_NO_SEARCH.Image")));
-            this.UI_NO_SEARCH.Location = new System.Drawing.Point(173, 2);
+            this.UI_NO_SEARCH.Location = new System.Drawing.Point(164, 4);
             this.UI_NO_SEARCH.Name = "UI_NO_SEARCH";
-            this.UI_NO_SEARCH.Size = new System.Drawing.Size(282, 367);
+            this.UI_NO_SEARCH.Size = new System.Drawing.Size(292, 367);
             this.UI_NO_SEARCH.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.UI_NO_SEARCH.TabIndex = 33;
             this.UI_NO_SEARCH.TabStop = false;
@@ -459,9 +459,9 @@
             // UI_NO_RESULTS
             // 
             this.UI_NO_RESULTS.Image = ((System.Drawing.Image)(resources.GetObject("UI_NO_RESULTS.Image")));
-            this.UI_NO_RESULTS.Location = new System.Drawing.Point(174, 4);
+            this.UI_NO_RESULTS.Location = new System.Drawing.Point(164, 3);
             this.UI_NO_RESULTS.Name = "UI_NO_RESULTS";
-            this.UI_NO_RESULTS.Size = new System.Drawing.Size(282, 367);
+            this.UI_NO_RESULTS.Size = new System.Drawing.Size(293, 367);
             this.UI_NO_RESULTS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.UI_NO_RESULTS.TabIndex = 34;
             this.UI_NO_RESULTS.TabStop = false;
