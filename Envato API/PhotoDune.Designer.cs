@@ -257,7 +257,7 @@
             // UI_LOADING
             // 
             this.UI_LOADING.Image = ((System.Drawing.Image)(resources.GetObject("UI_LOADING.Image")));
-            this.UI_LOADING.Location = new System.Drawing.Point(164, 4);
+            this.UI_LOADING.Location = new System.Drawing.Point(166, 3);
             this.UI_LOADING.Name = "UI_LOADING";
             this.UI_LOADING.Size = new System.Drawing.Size(292, 367);
             this.UI_LOADING.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -268,9 +268,9 @@
             // UI_LOADING_GIF
             // 
             this.UI_LOADING_GIF.Image = ((System.Drawing.Image)(resources.GetObject("UI_LOADING_GIF.Image")));
-            this.UI_LOADING_GIF.Location = new System.Drawing.Point(264, 150);
+            this.UI_LOADING_GIF.Location = new System.Drawing.Point(275, 169);
             this.UI_LOADING_GIF.Name = "UI_LOADING_GIF";
-            this.UI_LOADING_GIF.Size = new System.Drawing.Size(100, 50);
+            this.UI_LOADING_GIF.Size = new System.Drawing.Size(58, 65);
             this.UI_LOADING_GIF.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.UI_LOADING_GIF.TabIndex = 20;
             this.UI_LOADING_GIF.TabStop = false;
@@ -449,7 +449,7 @@
             // UI_NO_SEARCH
             // 
             this.UI_NO_SEARCH.Image = ((System.Drawing.Image)(resources.GetObject("UI_NO_SEARCH.Image")));
-            this.UI_NO_SEARCH.Location = new System.Drawing.Point(164, 4);
+            this.UI_NO_SEARCH.Location = new System.Drawing.Point(166, 3);
             this.UI_NO_SEARCH.Name = "UI_NO_SEARCH";
             this.UI_NO_SEARCH.Size = new System.Drawing.Size(292, 367);
             this.UI_NO_SEARCH.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -459,7 +459,7 @@
             // UI_NO_RESULTS
             // 
             this.UI_NO_RESULTS.Image = ((System.Drawing.Image)(resources.GetObject("UI_NO_RESULTS.Image")));
-            this.UI_NO_RESULTS.Location = new System.Drawing.Point(164, 3);
+            this.UI_NO_RESULTS.Location = new System.Drawing.Point(165, 3);
             this.UI_NO_RESULTS.Name = "UI_NO_RESULTS";
             this.UI_NO_RESULTS.Size = new System.Drawing.Size(293, 367);
             this.UI_NO_RESULTS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -505,6 +505,7 @@
             this.Controls.Add(this.UI_TRENDING);
             this.Controls.Add(this.BOX_1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PhotoDune";
             this.Text = "PhotoDune";
             this.Load += new System.EventHandler(this.PhotoDune_Load);

@@ -24,139 +24,10 @@ namespace Envato_API
             populateWindow();
         }
 
-
-        public class Rating
-        {
-            public double rating { get; set; }
-            public int count { get; set; }
-        }
-
-        public class ThumbnailPreview
-        {
-            public string small_url { get; set; }
-            public string large_url { get; set; }
-            public int large_width { get; set; }
-            public int large_height { get; set; }
-        }
-
-        public class IconWithThumbnailPreview
-        {
-            public string icon_url { get; set; }
-            public string thumbnail_url { get; set; }
-            public int thumbnail_width { get; set; }
-            public int thumbnail_height { get; set; }
-        }
-
-        public class Previews
-        {
-            public ThumbnailPreview thumbnail_preview { get; set; }
-            public IconWithThumbnailPreview icon_with_thumbnail_preview { get; set; }
-        }
-
-        public class Match
-        {
-            public int id { get; set; }
-            public string name { get; set; }
-            public string description { get; set; }
-            public string site { get; set; }
-            public string classification { get; set; }
-            public string classification_url { get; set; }
-            public object price_cents { get; set; }
-            public int number_of_sales { get; set; }
-            public string author_username { get; set; }
-            public string author_url { get; set; }
-            public string author_image { get; set; }
-            public string url { get; set; }
-            public string summary { get; set; }
-            public Rating rating { get; set; }
-            public string updated_at { get; set; }
-            public string published_at { get; set; }
-            public bool trending { get; set; }
-            public Previews previews { get; set; }
-            public List<object> attributes { get; set; }
-            public List<string> tags { get; set; }
-        }
-
-        public class Links
-        {
-            public string next_page_url { get; set; }
-            public object prev_page_url { get; set; }
-            public string first_page_url { get; set; }
-            public string last_page_url { get; set; }
-        }
-
-        public class PhotoDune_Tag
-        {
-            public string key { get; set; }
-            public int count { get; set; }
-            public object description { get; set; }
-        }
-
-        public class Color
-        {
-            public string key { get; set; }
-            public int count { get; set; }
-            public object description { get; set; }
-        }
-
-        public class Date
-        {
-            public string key { get; set; }
-            public int count { get; set; }
-            public object description { get; set; }
-        }
-
-        public class PhotoDune_Size
-        {
-            public string key { get; set; }
-            public int count { get; set; }
-            public object description { get; set; }
-        }
-
-        public class SalesCount
-        {
-            public string key { get; set; }
-            public int count { get; set; }
-            public object description { get; set; }
-        }
-
-        public class Aggregations
-        {
-            public object category_root_count { get; set; }
-            public object category { get; set; }
-            public object platform_root_count { get; set; }
-            public object platform { get; set; }
-            public object file_formats { get; set; }
-            public List<PhotoDune_Tag> tags { get; set; }
-            public List<Color> colors { get; set; }
-            public object rating { get; set; }
-            public List<Date> date { get; set; }
-            public List<Size> size { get; set; }
-            public List<SalesCount> sales_count { get; set; }
-            public object cost { get; set; }
-            public object length { get; set; }
-            public object tempo { get; set; }
-            public object alpha { get; set; }
-            public object looped { get; set; }
-            public object resolution { get; set; }
-            public object vocals_in_audio { get; set; }
-            public object frame_rate { get; set; }
-            public object compatible_with { get; set; }
-        }
-
-        public class RootObject
-        {
-            public int took { get; set; }
-            public List<Match> matches { get; set; }
-            public bool timed_out { get; set; }
-            public int total_hits { get; set; }
-            public Links links { get; set; }
-            public object author_exists { get; set; }
-            public Aggregations aggregations { get; set; }
-        }
-
-
         public string ENVATO_RESPONSE_BEFORE { get; set; }
+        public JToken value { get; set; }
+        public JObject ENVATO_RESPONSE { get; set; }
+        public Dictionary<string, string> parameters { get; set; }
         private async void populateWindow()
         {
             // Misc stuff //
@@ -165,21 +36,23 @@ namespace Envato_API
 
             string longurl = "https://api.envato.com/v1/discovery/search/search/item";
             var uriBuilder = new UriBuilder(longurl);
-            Dictionary<string, string> parameters = new Dictionary<string, string>
+            Dictionary<string, string> parameters_1 = new Dictionary<string, string>
             {
                 {"site", "photodune.net"}
             };
 
+            parameters = parameters_1;
+
             // Now let's fill up the parameters list with the list of search terms //
             foreach(KeyValuePair<string, string> VALUE in search)
             {
-                parameters.Add(VALUE.Key, VALUE.Value);
+                parameters_1.Add(VALUE.Key, VALUE.Value);
             }
             // End of populating parameters dictionary //
 
             var query = HttpUtility.ParseQueryString(uriBuilder.Query);
             // Iteration time! //
-            foreach (KeyValuePair<string, string> entry in parameters)
+            foreach (KeyValuePair<string, string> entry in parameters_1)
             {
                 query[entry.Key] = entry.Value;
             }
@@ -194,27 +67,41 @@ namespace Envato_API
                 ENVATO_RESPONSE_BEFORE = response;
             }
 
-            var ENVATO_RESPONSE = Newtonsoft.Json.Linq.JObject.Parse(ENVATO_RESPONSE_BEFORE);
+            var ENVATO_RESPONSE_1 = Newtonsoft.Json.Linq.JObject.Parse(ENVATO_RESPONSE_BEFORE);
+            ENVATO_RESPONSE = ENVATO_RESPONSE_1;
+        }
+
+        public void makeCall()
+        {
+            int counter = 0;
+
             foreach (var x in ENVATO_RESPONSE)
             {
                 if (x.Key == "matches")
                 {
                     // We've hit the jackpot! //
-                    JToken value = x.Value.First;
-                    Match newMatch = new Match();
+                    if (counter == 0)
+                    {
+                        value = x.Value.First;
+                    }
+                    else
+                    {
+                        value = x.Value.Next;
+                    }
 
                     UI_NO_RESULTS.Visible = false;
 
                     try
                     {
                         var ERROR_CHECK = value["url"];
-                    } catch
+                    }
+                    catch
                     {
                         // No matches found for the given search query! //
                         UI_NO_RESULTS.Visible = true;
                     }
 
-                    if(!UI_NO_RESULTS.Visible)
+                    if (!UI_NO_RESULTS.Visible)
                     {
                         // Populate the UI //
                         BOX_1.ImageLocation = value["previews"]["thumbnail_preview"]["large_url"].ToString();
@@ -268,8 +155,10 @@ namespace Envato_API
                         {
                             UI_NO_SEARCH.Visible = false;
                         }
+
+                        counter += 1;
                     }
-                    
+
                 }
             }
         }
@@ -318,7 +207,7 @@ namespace Envato_API
 
         public Dictionary<string, string> searchTerms = new Dictionary<string, string>();
         public Dictionary<string, string> search = new Dictionary<string, string>();
-        private void UI_SBTN_Click(object sender, EventArgs e)
+        public void UI_SBTN_Click(object sender, EventArgs e)
         {
             // You just hit "Search" //
             searchTerms.Clear();
@@ -341,7 +230,10 @@ namespace Envato_API
                     search.Add(ITEM.Key, ITEM.Value);
                 }
             }
+            PhotoDuneImageSelect photoSelectWindow = new PhotoDuneImageSelect(ENVATO_RESPONSE);
+            photoSelectWindow.ShowDialog();
 
+            makeCall();
             populateWindow();
         }
     }
