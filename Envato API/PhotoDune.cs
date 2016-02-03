@@ -21,13 +21,16 @@ namespace Envato_API
         public PhotoDune()
         {
             InitializeComponent();
-            populateWindow();
+            //populateWindow();
         }
 
         public string ENVATO_RESPONSE_BEFORE { get; set; }
         public JToken value { get; set; }
         public JObject ENVATO_RESPONSE { get; set; }
         public Dictionary<string, string> parameters { get; set; }
+        public Dictionary<string, string> parametersPUBLIC { get; set; }
+        public JObject ENVATO { get; set; }
+
         private async void populateWindow()
         {
             // Misc stuff //
@@ -35,47 +38,55 @@ namespace Envato_API
             // End of misc stuff //
 
             string longurl = "https://api.envato.com/v1/discovery/search/search/item";
-            var uriBuilder = new UriBuilder(longurl);
+            
+
             Dictionary<string, string> parameters_1 = new Dictionary<string, string>
             {
                 {"site", "photodune.net"}
             };
-
-            parameters = parameters_1;
 
             // Now let's fill up the parameters list with the list of search terms //
             foreach(KeyValuePair<string, string> VALUE in search)
             {
                 parameters_1.Add(VALUE.Key, VALUE.Value);
             }
+
+            foreach (KeyValuePair<string, string> VALUE in parameters_1)
+            {
+                MessageBox.Show(VALUE.Key, VALUE.Value);
+            }
             // End of populating parameters dictionary //
 
+            var uriBuilder = new UriBuilder(longurl);
             var query = HttpUtility.ParseQueryString(uriBuilder.Query);
             // Iteration time! //
             foreach (KeyValuePair<string, string> entry in parameters_1)
             {
                 query[entry.Key] = entry.Value;
             }
+
+            parametersPUBLIC = parameters_1;
+
             // End of iteration! //
             uriBuilder.Query = query.ToString();
             longurl = uriBuilder.ToString();
+            MessageBox.Show(longurl);
 
             using (var client = new HttpClient())
             {
                 client.DefaultRequestHeaders.Add("Authorization", "Bearer " + MainWindow.accessToken);
-                var response = await client.GetStringAsync(longurl);
-                ENVATO_RESPONSE_BEFORE = response;
+                ENVATO_RESPONSE_BEFORE = await client.GetStringAsync(longurl);
             }
 
-            var ENVATO_RESPONSE_1 = Newtonsoft.Json.Linq.JObject.Parse(ENVATO_RESPONSE_BEFORE);
-            ENVATO_RESPONSE = ENVATO_RESPONSE_1;
+           ENVATO = Newtonsoft.Json.Linq.JObject.Parse(ENVATO_RESPONSE_BEFORE);
+           File.WriteAllText("data.dat", ENVATO_RESPONSE_BEFORE);
         }
 
-        public void makeCall()
+        private void makeCall()
         {
             int counter = 0;
 
-            foreach (var x in ENVATO_RESPONSE)
+            foreach (var x in ENVATO)
             {
                 if (x.Key == "matches")
                 {
@@ -143,7 +154,7 @@ namespace Envato_API
                         UI_LOADING.Visible = false;
                         UI_LOADING_GIF.Visible = false;
 
-                        if (parameters.Count == 1)
+                        if (parametersPUBLIC.Count == 1)
                         {
                             // This bit checks the length of the parameters list.
                             // If it is only 1, then it must only contain the "site: photodune" line,
@@ -207,7 +218,7 @@ namespace Envato_API
 
         public Dictionary<string, string> searchTerms = new Dictionary<string, string>();
         public Dictionary<string, string> search = new Dictionary<string, string>();
-        public void UI_SBTN_Click(object sender, EventArgs e)
+        private void UI_SBTN_Click(object sender, EventArgs e)
         {
             // You just hit "Search" //
             searchTerms.Clear();
@@ -230,11 +241,11 @@ namespace Envato_API
                     search.Add(ITEM.Key, ITEM.Value);
                 }
             }
-            PhotoDuneImageSelect photoSelectWindow = new PhotoDuneImageSelect(ENVATO_RESPONSE);
-            photoSelectWindow.ShowDialog();
-
-            makeCall();
             populateWindow();
+            makeCall();
+            PhotoDuneImageSelect photoSelectWindow = new PhotoDuneImageSelect(ENVATO);         
+            photoSelectWindow.ShowDialog();
+            
         }
     }
 }

@@ -49,3 +49,4 @@ C:\Users\Jake\Documents\GitHub\EnvatoMate\Envato API\obj\Debug\Envato API.csproj
 C:\Users\Jake\Documents\GitHub\EnvatoMate\Envato API\obj\Debug\Envato_API.PhotoDune.resources
 C:\Users\Jake (King of Cool)\Documents\GitHub\EnvatoMate\Envato API\obj\Debug\Envato_API.PhotoDune.resources
 C:\Users\Jake\Documents\GitHub\EnvatoMate\Envato API\obj\Debug\Envato_API.PhotoDuneImageSelect.resources
+C:\Users\Jake (King of Cool)\Documents\GitHub\EnvatoMate\Envato API\obj\Debug\Envato_API.PhotoDuneImageSelect.resources

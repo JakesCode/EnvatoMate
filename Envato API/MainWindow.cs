@@ -85,14 +85,14 @@ namespace Envato_API
 
 
             // Check Response //
-            Newtonsoft.Json.Linq.JObject ENVATO_RESPONSE = Newtonsoft.Json.Linq.JObject.Parse(newResponse.Content);
+            Newtonsoft.Json.Linq.JObject THIS_ENVATO_RESPONSE = Newtonsoft.Json.Linq.JObject.Parse(newResponse.Content);
             //DEBUG - MessageBox.Show(ENVATO_RESPONSE.ToString());//
             // End of checking //
 
             // Populate the form //
-            welcomeLabel.Text = ("Welcome, " + (string)ENVATO_RESPONSE["account"]["firstname"] + ".");
-            profileImg.ImageLocation = (string)ENVATO_RESPONSE["account"]["image"];
-            UI_BALANCE.Text = "£" + (string)ENVATO_RESPONSE["account"]["balance"];
+            welcomeLabel.Text = ("Welcome, " + (string)THIS_ENVATO_RESPONSE["account"]["firstname"] + ".");
+            profileImg.ImageLocation = (string)THIS_ENVATO_RESPONSE["account"]["image"];
+            UI_BALANCE.Text = "£" + (string)THIS_ENVATO_RESPONSE["account"]["balance"];
             // End of populating //
         }
 

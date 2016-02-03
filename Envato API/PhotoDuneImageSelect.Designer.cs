@@ -89,20 +89,24 @@
             this.IMG_BOX_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.IMG_BOX_1.TabIndex = 2;
             this.IMG_BOX_1.TabStop = false;
+            this.IMG_BOX_1.Click += new System.EventHandler(this.IMG_BOX_1_Click);
             // 
             // IMG_BOX_2
             // 
             this.IMG_BOX_2.Location = new System.Drawing.Point(119, 104);
             this.IMG_BOX_2.Name = "IMG_BOX_2";
             this.IMG_BOX_2.Size = new System.Drawing.Size(100, 100);
+            this.IMG_BOX_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.IMG_BOX_2.TabIndex = 3;
             this.IMG_BOX_2.TabStop = false;
+            this.IMG_BOX_2.Click += new System.EventHandler(this.IMG_BOX_2_Click);
             // 
             // IMG_BOX_3
             // 
             this.IMG_BOX_3.Location = new System.Drawing.Point(225, 104);
             this.IMG_BOX_3.Name = "IMG_BOX_3";
             this.IMG_BOX_3.Size = new System.Drawing.Size(100, 100);
+            this.IMG_BOX_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.IMG_BOX_3.TabIndex = 4;
             this.IMG_BOX_3.TabStop = false;
             // 
@@ -111,6 +115,7 @@
             this.IMG_BOX_4.Location = new System.Drawing.Point(331, 105);
             this.IMG_BOX_4.Name = "IMG_BOX_4";
             this.IMG_BOX_4.Size = new System.Drawing.Size(100, 100);
+            this.IMG_BOX_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.IMG_BOX_4.TabIndex = 5;
             this.IMG_BOX_4.TabStop = false;
             // 
@@ -119,6 +124,7 @@
             this.IMG_BOX_5.Location = new System.Drawing.Point(437, 104);
             this.IMG_BOX_5.Name = "IMG_BOX_5";
             this.IMG_BOX_5.Size = new System.Drawing.Size(100, 100);
+            this.IMG_BOX_5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.IMG_BOX_5.TabIndex = 6;
             this.IMG_BOX_5.TabStop = false;
             // 
@@ -127,6 +133,7 @@
             this.IMG_BOX_6.Location = new System.Drawing.Point(543, 105);
             this.IMG_BOX_6.Name = "IMG_BOX_6";
             this.IMG_BOX_6.Size = new System.Drawing.Size(100, 100);
+            this.IMG_BOX_6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.IMG_BOX_6.TabIndex = 7;
             this.IMG_BOX_6.TabStop = false;
             // 
@@ -135,6 +142,7 @@
             this.IMG_BOX_7.Location = new System.Drawing.Point(12, 211);
             this.IMG_BOX_7.Name = "IMG_BOX_7";
             this.IMG_BOX_7.Size = new System.Drawing.Size(100, 100);
+            this.IMG_BOX_7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.IMG_BOX_7.TabIndex = 8;
             this.IMG_BOX_7.TabStop = false;
             // 
@@ -143,6 +151,7 @@
             this.IMG_BOX_8.Location = new System.Drawing.Point(119, 211);
             this.IMG_BOX_8.Name = "IMG_BOX_8";
             this.IMG_BOX_8.Size = new System.Drawing.Size(100, 100);
+            this.IMG_BOX_8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.IMG_BOX_8.TabIndex = 9;
             this.IMG_BOX_8.TabStop = false;
             // 
@@ -151,6 +160,7 @@
             this.IMG_BOX_9.Location = new System.Drawing.Point(225, 211);
             this.IMG_BOX_9.Name = "IMG_BOX_9";
             this.IMG_BOX_9.Size = new System.Drawing.Size(100, 100);
+            this.IMG_BOX_9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.IMG_BOX_9.TabIndex = 10;
             this.IMG_BOX_9.TabStop = false;
             // 
@@ -159,6 +169,7 @@
             this.IMG_BOX_10.Location = new System.Drawing.Point(331, 210);
             this.IMG_BOX_10.Name = "IMG_BOX_10";
             this.IMG_BOX_10.Size = new System.Drawing.Size(100, 100);
+            this.IMG_BOX_10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.IMG_BOX_10.TabIndex = 11;
             this.IMG_BOX_10.TabStop = false;
             // 
@@ -167,6 +178,7 @@
             this.IMG_BOX_11.Location = new System.Drawing.Point(437, 210);
             this.IMG_BOX_11.Name = "IMG_BOX_11";
             this.IMG_BOX_11.Size = new System.Drawing.Size(100, 100);
+            this.IMG_BOX_11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.IMG_BOX_11.TabIndex = 12;
             this.IMG_BOX_11.TabStop = false;
             // 
@@ -175,6 +187,7 @@
             this.IMG_BOX_12.Location = new System.Drawing.Point(543, 210);
             this.IMG_BOX_12.Name = "IMG_BOX_12";
             this.IMG_BOX_12.Size = new System.Drawing.Size(100, 100);
+            this.IMG_BOX_12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.IMG_BOX_12.TabIndex = 13;
             this.IMG_BOX_12.TabStop = false;
             // 
